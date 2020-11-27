@@ -48,7 +48,7 @@ public class PetController {
 		view.showBreed();
 		String breed = scanner.nextLine();
 		
-		Pet pet = new Pet.Builder()
+		Pet pet = new Pet.Build()
 				.withBreed(breed)
 				.withCellPhone(cellPhone)
 				.withName(name)

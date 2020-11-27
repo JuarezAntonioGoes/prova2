@@ -16,28 +16,28 @@ public class Pet {
 	}
 	//////////////
 	
-	public static class Builder{
+	public static class Build{
 		private String name;
 		private String breed;
 		private String ownerName;
 		private String cellPhone;
 		
-		public Builder withName(String name) {
+		public Build withName(String name) {
 			this.name = name;
 			return this;
 		}
 		
-		public Builder withBreed(String breed) {
+		public Build withBreed(String breed) {
 			this.breed = breed;
 			return this;
 		}
 		
-		public Builder withOwnerName(String ownerName) {
+		public Build withOwnerName(String ownerName) {
 			this.ownerName = ownerName;
 			return this;
 		}
 		
-		public Builder withCellPhone(String cellPhone) {
+		public Build withCellPhone(String cellPhone) {
 			this.cellPhone = cellPhone;
 			return this;
 		}
