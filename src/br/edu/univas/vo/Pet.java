@@ -14,6 +14,41 @@ public class Pet {
 		this.ownerName = ownerName;
 		this.cellPhone = cellPhone;
 	}
+	//////////////
+	
+	public static class Builder{
+		private String name;
+		private String breed;
+		private String ownerName;
+		private String cellPhone;
+		
+		public Builder withName(String name) {
+			this.name = name;
+			return this;
+		}
+		
+		public Builder withBreed(String breed) {
+			this.breed = breed;
+			return this;
+		}
+		
+		public Builder withOwnerName(String ownerName) {
+			this.ownerName = ownerName;
+			return this;
+		}
+		
+		public Builder withCellPhone(String cellPhone) {
+			this.cellPhone = cellPhone;
+			return this;
+		}
+		
+		public Pet build() {
+			return new Pet(name, breed, ownerName, cellPhone);
+		}
+	}
+	
+	
+	//////////////
 	
 	public String getName() {
 		return name;

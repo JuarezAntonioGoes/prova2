@@ -48,7 +48,12 @@ public class PetController {
 		view.showBreed();
 		String breed = scanner.nextLine();
 		
-		Pet pet = new Pet(ownerName, cellPhone, name, breed);
+		Pet pet = new Pet.Builder()
+				.withBreed(breed)
+				.withCellPhone(cellPhone)
+				.withName(name)
+				.withOwnerName(ownerName)
+				.build();
 		dao.insert(pet);
 		
 		view.showSuccessMessage();
